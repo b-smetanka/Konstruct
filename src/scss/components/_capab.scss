@@ -1,0 +1,70 @@
+.capab {
+  padding-bottom: 50px;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include xs {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &-head {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      display: block;
+      width: 30%;
+      height: 2px;
+      background: var(--color-cerulean);
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 25px;
+      color: var(--river-bed);
+
+      @include md {
+        width: 165px;
+      }
+
+      @include sm {
+        width: 100px;
+      }
+
+      @include xs {
+        width: 163px;
+      }
+    }
+
+    @include xs {
+      margin: 0 auto 15px;
+      width: 150px;
+    }
+  }
+
+  &__descr {
+    margin-left: 185px;
+    width: 373px;
+    font-size: 11px;
+    line-height: 19px;
+    color: var(--river-bed);
+
+    @include md {
+      margin: 0 17px 0 60px;
+    }
+
+    @include xs {
+      display: block;
+      margin: 0 auto 15px;
+      padding: 0 20px;
+      width: 100%;
+    }
+  }
+}

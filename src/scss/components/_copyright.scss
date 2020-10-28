@@ -1,0 +1,12 @@
+.copyright {
+   background: #171819;
+
+   &__descr {
+      padding: 20px 0;
+      text-align: center;
+      font-size: 11px;
+      line-height: 15px;
+
+      color: var(--quill-gray);
+   }
+}

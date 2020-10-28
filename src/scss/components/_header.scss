@@ -1,0 +1,86 @@
+.header {
+  border-bottom: 1px solid #e6e6e6;
+
+  &-fixed {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background: var(--color-white);
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+
+    @include md {
+      padding: 15px;
+    }
+  }
+
+  @include sm {
+    position: relative;
+  }
+}
+
+.logo {
+  display: inline-block;
+  width: 80px;
+  height: 18px;
+  background: var(--color-dark);
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: var(--color-dark);
+    object-fit: cover;
+  }
+
+  @include sm {
+    margin: 0 auto;
+  }
+}
+
+.burger {
+  position: relative;
+  display: none;
+  width: 25px;
+  height: 15px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-bunker);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-bunker);
+  }
+
+  &__line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-bunker);
+    transform: translateY(-50%);
+  }
+
+  @include sm {
+    display: block;
+  }
+}

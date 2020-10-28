@@ -1,0 +1,141 @@
+.story {
+  margin-bottom: 50px;
+  padding: 50px 0;
+
+  &-title {
+    margin-bottom: 30px;
+    text-align: center;
+
+    &__one {
+      position: relative;
+      display: inline-block;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      color: var(--river-bed);
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        display: block;
+        width: 50%;
+        height: 2px;
+        background: var(--color-cerulean);
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  @include sm {
+    margin-bottom: 0;
+  }
+}
+
+.box {
+  display: flex;
+
+  &-left {
+    width: 435px;
+
+    &__info {
+      &-title {
+        margin-bottom: 10px;
+        padding-right: 40px;
+        font-weight: 700;
+        font-size: 20px;
+        color: var(--river-bed);
+
+        span {
+          color: var(--color-cerulean);
+        }
+
+        @include md {
+          font-size: 15px;
+        }
+      }
+
+      &-descr {
+        padding-right: 45px;
+        line-height: 20px;
+        color: #48555b;
+      }
+    }
+  }
+
+  &-right {
+    display: flex;
+    padding-top: 10px;
+
+    @include sm {
+      margin: 0 auto;
+    }
+  }
+
+  @include sm {
+    flex-wrap: wrap;
+  }
+}
+
+.card-grid {
+  overflow: hidden;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+
+    @include xs {
+      margin-right: 10px;
+    }
+  }
+
+  &__item {
+    width: 140px;
+    height: 224px;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.3s ease-out;
+    }
+
+    @include xs {
+      width: 102px;
+    height: 170px;
+    }
+  }
+}
+
+.we {
+  padding-top: 15px;
+  padding-left: 15px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.1875px;
+    text-transform: uppercase;
+    color: var(--color-white);
+
+    @include xs {
+      font-size: 18px;
+    }
+  }
+}
+
+.card-grid__item-one {
+  background: url("../img/card-one.png") center no-repeat;
+  background-size: cover;
+}
+
+.card-grid__item-two {
+  background: url("../img/card-two.png") center no-repeat;
+  background-size: cover;
+}
+
+.card-grid__item-three {
+  background: url("../img/card-three.png") center no-repeat;
+  background-size: cover;
+}
