@@ -25,6 +25,10 @@
   &__img {
     display: block;
     margin-bottom: 20px;
+
+    @include md {
+      text-align: center;
+    }
   }
 
   &__title {
@@ -34,6 +38,16 @@
     line-height: 24px;
     text-transform: uppercase;
     color: var(--river-bed);
+
+    @include md {
+      text-align: center;
+    }
+  }
+
+  &__descr {
+    @include md {
+      text-align: center;
+    }
   }
 }
 
