@@ -39,7 +39,7 @@
         text-transform: uppercase;
 
         @include sm {
-          font-size: 50px;
+          font-size: 40px;
         }
 
         @include xs {
@@ -53,12 +53,20 @@
         line-height: 22px;
 
         @include sm {
-          font-size: 13px;
+          font-size: 11px;
         }
 
         @include xs {
           font-size: 10px;
         }
+      }
+
+      @include sm {
+        padding: 10% 0;
+      }
+
+      @include xs {
+        padding: 40% 0;
       }
     }
 
@@ -98,7 +106,7 @@
       }
 
       @include sm  {
-        bottom: 3%;
+        bottom: -15%;
       }
 
       @include xs {
@@ -109,5 +117,13 @@
 
   @include md {
     min-height: 680px;
+  }
+
+  @include sm {
+    min-height: 360px;
+  }
+
+  @include xs {
+    min-height: 500px;
   }
 }
