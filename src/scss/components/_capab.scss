@@ -22,6 +22,11 @@
       width: 30%;
       height: 2px;
       background: var(--color-cerulean);
+
+      @include xs {
+        left: 57%;
+        transform: translateX(-50%);
+      }
     }
 
     &__title {

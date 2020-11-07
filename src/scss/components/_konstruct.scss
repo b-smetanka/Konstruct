@@ -105,8 +105,8 @@
         bottom: -5%;
       }
 
-      @include sm  {
-        bottom: -15%;
+      @include sm {
+        bottom: -100%;
       }
 
       @include xs {

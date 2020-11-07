@@ -99,8 +99,7 @@
   }
 
   @include xs {
-    left: 30%;
-    top: 115%;
+    display: none;
   }
 }
 
@@ -114,5 +113,31 @@
 
   @include xs {
     left: 60%;
+  }
+}
+
+.box-pag {
+  display: none;
+
+  @include xs {
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    display: block;
+    transform: translateX(-50%);
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+    }
+
+    .swiper-pagination-bullet-active {
+      box-shadow: 0 4px 10px 2px rgba(0, 164, 229, 0.2);
+      background: var(--color-cerulean);
+    }
   }
 }
