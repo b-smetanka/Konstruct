@@ -5,9 +5,15 @@ const bannerSlider = new Swiper(vars.$bannerSlider, {
   loop: true,
   containerModifierClass: 'banner-slider-',
   slidesPerView: 1,
+  clickable: true,
   navigation: {
     nextEl: '.box-prev-btn',
     prevEl: '.box-next-btn',
+  },
+  pagination: {
+    el: '.box-pag',
+    type: 'bullets',
+    clickable: true,
   },
   autoplay: {
     delay: 3000,
