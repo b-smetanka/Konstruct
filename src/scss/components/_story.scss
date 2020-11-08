@@ -75,6 +75,7 @@
 
     @include xs {
       flex-wrap: wrap;
+      width: 100%;
     }
   }
 
@@ -90,7 +91,7 @@
     margin-right: 20px;
 
     @include xs {
-      margin-right: 10px;
+      margin-right: 9px;
     }
   }
 
@@ -105,9 +106,23 @@
     }
 
     @include xs {
-      width: 102px;
-      height: 170px;
+      width: auto;
     }
+  }
+
+  &__one {
+    @include xs {
+      display: block;
+      margin-right: 0 !important;
+      width: 98% !important;
+    }
+  }
+
+  @include xs {
+    display: block;
+    width: 48%;
+    margin: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -132,26 +147,14 @@
 .card-grid__item-one {
   background: url("../img/card-one.png") center no-repeat;
   background-size: cover;
-
-  @include xs {
-    width: 290px;
-  }
 }
 
 .card-grid__item-two {
   background: url("../img/card-two.png") center no-repeat;
   background-size: cover;
-
-  @include xs {
-    width: 140px;
-  }
 }
 
 .card-grid__item-three {
   background: url("../img/card-three.png") center no-repeat;
   background-size: cover;
-
-  @include xs {
-    width: 140px;
-  }
 }
