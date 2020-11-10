@@ -68,6 +68,10 @@
       @include xs {
         padding: 30% 0;
       }
+
+      @include xs {
+        padding: 50% 0;
+      }
     }
 
     &__button {
@@ -110,7 +114,7 @@
       }
 
       @include xs {
-        bottom: -30%;
+        display: none;
       }
     }
   }
